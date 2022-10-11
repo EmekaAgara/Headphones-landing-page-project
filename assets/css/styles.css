@@ -228,6 +228,9 @@ img{
 
 
 /* Change background header */
+.scroll-header{
+  background-color: var(--body-color);
+}
 
 
 /* Active link */
@@ -277,7 +280,7 @@ img{
   line-height: var(--text-line-height);
 }
 
-.home-price{
+.home__price{
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
   margin-left: var(--mb-0-75);
@@ -296,6 +299,16 @@ img{
 
 .button:hover{
   background-color: var(--black-color-alt);
+}
+
+.button__icon{
+  font-size: 1.2rem;
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .75rem;
 }
 
 
