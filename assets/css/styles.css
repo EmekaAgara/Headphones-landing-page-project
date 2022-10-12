@@ -234,7 +234,12 @@ img{
 
 
 /* Active link */
-
+.active-link{
+  background: var(--white-color);
+   color: transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+}
 
 /*=============== HOME ===============*/
 .home__img{
@@ -542,9 +547,34 @@ img{
 }
 
 /*=============== SCROLL UP ===============*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  background-color: var(--container-color);
+  border-radius: .25rem;
+  padding: 0.45rem;
+  opacity: 9;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup__icon{
+  color: var(--white-color);
+  font-size: 1.35rem;
+}
+
+.scrollup:hover{
+  background-color: var(--black-color);
+  opacity: 1;
+}
 
 
 /* Show Scroll Up*/
+.show-scroll{
+  bottom: 5rem;
+}
 
 
 /*=============== SCROLL BAR ===============*/
